@@ -1,0 +1,60 @@
+.hotel-offer {}
+
+.hotel-offer__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 49px;
+}
+
+.hotel-offer__question {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $black;
+}
+
+.hotel-offer__description {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $dark-grey;
+}
+
+.hotel-offer__button-find-hotel {
+  display: block;
+  width: 280px;
+  height: 58px;
+  background-color: $main-accent-blue;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: $white;
+}

@@ -1,0 +1,114 @@
+.advantages {}
+
+.advantages__wrapper {
+  // margin: 0 auto;
+  // padding-left: 26px;
+  // padding-right: 26px;
+}
+
+.advantages__list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.advantages__item {}
+
+.advantages__item--big {
+  color: $white;
+  background-color: $main-accent-blue;
+}
+
+.advantages__item--small {
+  color: $black;
+  background-color: $light-grey;
+}
+
+.advantages__header {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+
+  // color: $white;
+}
+
+.advantages__number {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+
+  // color: $white;
+}
+
+.advantages__slogan {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  padding-left: 12.5px;
+  padding-right: 12.5px;
+
+  // color: $white;
+}
+
+.advantages__photo {}
+
+.advantages__feature-list {
+  list-style: none;
+  padding-left: 0;
+  background-color: $white;
+}
+
+.advantages__feature-item {
+  padding-left: 69px;
+  padding-right: 29px;
+}
+
+.advantages__feature-item-header {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+
+  color: $black;
+}
+
+.advantages__feature-item-description {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+
+  color: $dark-grey;
+}

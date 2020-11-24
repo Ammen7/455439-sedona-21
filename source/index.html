@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -44,7 +45,7 @@
       <div class="intro__wrapper">
         <h2 class="visually-hidden">Вступление</h2>
         <div class="intro__welcome-background"> </div>
-        <p class="intro__slogan">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="intro__slogan">Седона - небольшой <br> городок в Аризоне, заслуживающий большего!</p>
         <p class="intro__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
     </section>
@@ -54,7 +55,7 @@
       <div class="advantages__wrapper">
         <ol class="advantages__list">
 
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--big">
             <h3 class="advantages__header">Настоящий городок</h3>
             <p class="advantages__number">- №1 -</p>
             <p class="advantages__slogan">Седона не аттракцион для туристов, там течет своя жизнь</p>
@@ -79,26 +80,26 @@
             </ul>
           </li>
 
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--big">
             <h3 class="advantages__header">Там есть мост дьявола</h3>
             <p class="advantages__number">- №2 -</p>
             <p class="advantages__slogan">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             <div class="advantages__photo"></div>
           </li>
 
-          <li class="advantages__item">
-            <h3 class="advantages__header">Небольшая прощадь</h3>
+          <li class="advantages__item advantages__item--small">
+            <h3 class="advantages__header">Небольшая площадь</h3>
             <p class="advantages__number">- №3 -</p>
             <p class="advantages__slogan">Все интересные места находятся очень близко</p>
           </li>
 
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--small">
             <h3 class="advantages__header">Красивая дорога</h3>
             <p class="advantages__number">- №4 -</p>
             <p class="advantages__slogan">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
 
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--small">
             <h3 class="advantages__header">Мало туристов</h3>
             <p class="advantages__number">- №5 -</p>
             <p class="advantages__slogan">Большинство едет в Гранд Каньон и толпится там</p>
@@ -121,7 +122,7 @@
     <section class="map">
       <div class="map__wrapper">
         <h2 class="visually-hidden">Карта</h2>
-        <img class="map-sedona" src="https://via.placeholder.com/320x350" alt="Карта" width="320" height="350">
+        <img class="map__sedona" src="https://via.placeholder.com/320x350" alt="Карта" width="320" height="350">
       </div>
     </section>
 
@@ -132,18 +133,18 @@
       <p class="page-footer__hashtag">#visitsedona</p>
       <ul class="page-footer__socials-list">
         <li class="page-footer__socials-item">
-          <a href="">Twitter</a>
+          <a class="page-footer__socials-item-link" href="" aria-label="Twitter"></a>
         </li>
         <li class="page-footer__socials-item">
-          <a href="">Facebook</a>
+          <a class="page-footer__socials-item-link" href="" aria-label="Facebook"></a>
         </li>
         <li class="page-footer__socials-item">
-          <a href="">Youtube</a>
+          <a class="page-footer__socials-item-link" href="" aria-label="Youtube"></a>
         </li>
       </ul>
       <div class="page-footer__copyright">
         <p>Разработано</p>
-        <a href="">Html academy</a>
+        <a href="" aria-label="Html academy"></a>
       </div>
     </div>
   </footer>
