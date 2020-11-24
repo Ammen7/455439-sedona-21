@@ -1,0 +1,66 @@
+.page-footer {}
+
+.page-footer__wrapper {
+  padding-top: 7.5px;
+}
+
+.page-footer__hashtag {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $black;
+}
+
+.page-footer__socials-list {
+  width: 151px;
+  margin: 0 auto 45px;
+  padding-top: 12.5px;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer__socials-item {}
+
+.page-footer__socials-item-link {
+  display: block;
+  width: 46px;
+  height: 48px;
+  background-color: $main-accent-blue;
+}
+
+.page-footer__copyright {
+  width: 144px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.page-footer__copyright p {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $black;
+}
+
+.page-footer__copyright a {
+  width: 27px;
+  height: 34px;
+  background-color: $dark-grey;
+}

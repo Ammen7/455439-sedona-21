@@ -1,0 +1,27 @@
+.nav-list {
+  margin: 0;
+}
+
+.nav-list__item {
+  list-style: none;
+}
+
+.nav-list__item--active {}
+
+.nav-list__link {
+  background: $main-accent-blue;
+
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  text-decoration: none;
+
+}

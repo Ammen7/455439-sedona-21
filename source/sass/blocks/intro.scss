@@ -1,0 +1,38 @@
+.intro {}
+
+.intro__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.intro__welcome-background {}
+
+.intro__slogan {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $black;
+}
+
+.intro__description {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $dark-grey;
+}
