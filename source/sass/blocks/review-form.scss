@@ -1,0 +1,122 @@
+.review-form {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.review-form__fieldset {
+  border: none;
+  border-bottom: 1px solid $border-grey;
+  padding: 0;
+  margin: 0;
+}
+
+.review-form__fieldset:last-of-type {
+  border: none;
+  display: flex;
+}
+
+.review-form__legend {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $black;
+}
+
+.review-form__label {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+
+  color: $black;
+}
+
+.review-form__label--emphasis {
+  font-weight: bold;
+}
+
+.review-form__label--contacts {
+  flex-direction: column;
+}
+
+.review-form__input-text {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+
+  width: 100%;
+
+  margin-left: 15px;
+  margin-bottom: 20px;
+  padding: 18px 0 14px 22px;
+
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  color: $black;
+  background: $input-grey;
+  border: none;
+}
+
+.review-form__radio {}
+
+.review-form__checkbox {}
+
+.review-form__textarea {
+  box-sizing: border-box;
+  resize: none;
+  width: 280px;
+  height: 160px;
+  padding: 13px 23px 29px 21px;
+  margin-bottom: 51px;
+
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+
+  color: $black;
+  background: $input-grey;
+  border: none;
+}
+
+.review-form__button-submit {
+  width: 280px;
+  height: 58px;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto;
+
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $white;
+  background-color: $main-accent-blue;
+}

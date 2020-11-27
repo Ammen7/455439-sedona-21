@@ -11,17 +11,17 @@
   padding-left: 0;
 }
 
-.advantages__item {}
+.advantages__item {
+  color: $black;
+  background-color: $light-grey;
+}
 
 .advantages__item--big {
   color: $white;
   background-color: $main-accent-blue;
 }
 
-.advantages__item--small {
-  color: $black;
-  background-color: $light-grey;
-}
+.advantages__item--small {}
 
 .advantages__header {
   font-family: "PT Sans";
