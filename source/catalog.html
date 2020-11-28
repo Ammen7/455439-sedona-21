@@ -38,53 +38,66 @@
 
   </header>
 
-  <main class="page-main">
-    <div class="page-main__wrapper">
-      <h1 class="page-main__header">Фото и видео</h1>
-      <p class="page-main__description">
-        Не можете решиться на путешествие
-        из-за курса? Фотографии помогут вам
-        забыть о политике и экономике.</p>
-      <section class="catalog-photo">
+  <main class="page-main-catalog">
+      <section class="page-main-catalog__intro intro wrapper">
+        <h1 class="intro__header">Фото и видео</h1>
+        <p class="intro__description">
+          Не можете решиться на путешествие
+          из-за курса? Фотографии помогут вам
+          забыть о политике и экономике.</p>
+        </section>
+      <section class="page-main-catalog__photo catalog-photo">
         <h2 class="visually-hidden">Фото</h2>
-        <ul class="catalog-photo__list">
+        <ul class="page-main-catalog__photo-list catalog-photo__list ">
 
-          <li class="catalog-photo__item">
+          <li class="page-main-catalog__photo-item catalog-photo__item wrapper">
             <img src="https://via.placeholder.com/280x280" alt="Фотография дороги на закате, вдали горы" width="280"
               height="280">
             <p class="catalog-photo__item-header">Неродные просторы</p>
             <p class="catalog-photo__item-author">Автор фото: Борис</p>
-            <p class="catalog-photo__item-likes" aria-label="Количество лайков">1350</p>
+            <p class="catalog-photo__item-likes">
+              <span class="visually-hidden">Количество лайков</span>
+              1350
+            </p>
           </li>
-          <li class="catalog-photo__item">
+          <li class="page-main-catalog__photo-item catalog-photo__item wrapper">
             <img src="https://via.placeholder.com/280x280" alt="Фотография необычного растения, похожего на кактус"
               width="280" height="280">
             <p class="catalog-photo__item-header">Местная растительность</p>
             <p class="catalog-photo__item-author">Автор фото: Сергей</p>
-            <p class="catalog-photo__item-likes" aria-label="Количество лайков">143</p>
+            <p class="catalog-photo__item-likes">
+              <span class="visually-hidden">Количество лайков</span>
+              143
+            </p>
           </li>
-          <li class="catalog-photo__item">
+          <li class="page-main-catalog__photo-item catalog-photo__item wrapper">
             <img src="https://via.placeholder.com/280x280" alt="Фотография дороги, извивающейся среди лесов" width="280"
               height="280">
             <p class="catalog-photo__item-header">Дорога на север</p>
             <p class="catalog-photo__item-author">Автор фото: Петр</p>
-            <p class="catalog-photo__item-likes" aria-label="Количество лайков">96</p>
+            <p class="catalog-photo__item-likes">
+              <span class="visually-hidden">Количество лайков</span>
+              96
+            </p>
           </li>
-          <li class="catalog-photo__item">
+          <li class="page-main-catalog__photo-item catalog-photo__item wrapper">
             <img src="https://via.placeholder.com/280x280" alt="Фотография естественного каменного моста над ущельем"
               width="280" height="280">
             <p class="catalog-photo__item-header">Мост Дьявола</p>
             <p class="catalog-photo__item-author">Автор фото: Антон</p>
-            <p class="catalog-photo__item-likes" aria-label="Количество лайков">254</p>
+            <p class="catalog-photo__item-likes">
+              <span class="visually-hidden">Количество лайков</span>
+              254
+            </p>
           </li>
 
         </ul>
       </section>
 
-      <section class="video">
+      <section class="page-main-catalog__video video">
         <h2 class="visually-hidden">Видеопрезентация</h2>
-        <p class="video__question-doubt">Все еще сомневаетесь?</p>
-        <p class="video__description">Смотрите видеопрезентацию и
+        <p class="page-main-catalog__video-question-doubt video__question-doubt">Все еще сомневаетесь?</p>
+        <p class="page-main-catalog__video-description video__description">Смотрите видеопрезентацию и
           скорее за билетами, пока они не
           подорожали в очередной раз!
         </p>
@@ -92,7 +105,6 @@
           aria-label="Видеопрезентация городка Седона" width="320" height="210"></video>
       </section>
 
-    </div>
   </main>
 
   <footer class="page-footer">
@@ -100,18 +112,18 @@
       <p class="page-footer__hashtag">#visitsedona</p>
       <ul class="page-footer__socials-list">
         <li class="page-footer__socials-item">
-          <a href="">Twitter</a>
+          <a class="page-footer__socials-item-link" href="" aria-label="Twitter"></a>
         </li>
         <li class="page-footer__socials-item">
-          <a href="">Facebook</a>
+          <a class="page-footer__socials-item-link" href="" aria-label="Facebook"></a>
         </li>
         <li class="page-footer__socials-item">
-          <a href="">Youtube</a>
+          <a class="page-footer__socials-item-link" href="" aria-label="Youtube"></a>
         </li>
       </ul>
       <div class="page-footer__copyright">
         <p>Разработано</p>
-        <a href="">Html academy</a>
+        <a href="" aria-label="Html academy"></a>
       </div>
     </div>
   </footer>

@@ -1,0 +1,52 @@
+.catalog-photo {}
+
+.catalog-photo__list {
+  padding: 0;
+}
+
+.catalog-photo__item {
+  list-style: none;
+  border-bottom: 1px solid $border-grey;
+
+}
+
+.catalog-photo__item-header {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+
+  color: $black;
+}
+
+.catalog-photo__item-author {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+
+  display: flex;
+  align-items: center;
+
+  color: $dark-grey;
+}
+
+.catalog-photo__item_likes {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+
+  color: $black;
+}
