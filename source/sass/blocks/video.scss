@@ -1,9 +1,6 @@
-.review-intro {
-  border-bottom: 1px solid $border-grey;
+.video {}
 
-}
-
-.review-intro__header {
+.video__question-doubt {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: bold;
@@ -19,7 +16,7 @@
   color: $black;
 }
 
-.review-intro__description {
+.video__description {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: normal;
@@ -27,9 +24,12 @@
   line-height: 24px;
 
   display: flex;
+  justify-content: center;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
 
-  color: $black;
+  color: $dark-grey;
 }
+
+.video__embedded-video {}
