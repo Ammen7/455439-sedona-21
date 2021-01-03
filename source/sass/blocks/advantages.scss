@@ -7,6 +7,9 @@
 }
 
 .advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+
   list-style: none;
   padding-left: 0;
 }
@@ -14,16 +17,60 @@
 .advantages__item {
   color: $black;
   background-color: $light-grey;
+
+
 }
 
 .advantages__item--big {
-  color: $white;
-  background-color: $main-accent-blue;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+  }
+
+
+
+  .advantages__main {
+    width: 100vw;
+    height: 211px;
+    color: $white;
+    background-color: $main-accent-blue;
+
+    @media (min-width: $tablet-width) {
+      height: 256px;
+      width: 33.333%;
+    }
+
+  }
+
+  .advantages__main--reverse-order {
+    @media (min-width: $tablet-width) {
+      order: 2;
+    }
+
+  }
+
+
 }
 
-.advantages__item--small {}
+.advantages__item--small {
+  width: 100vw;
+
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 33.333%;
+  }
+}
 
 .advantages__header {
+  margin-top: 0;
+  padding-top: 39px;
+
   font-family: "PT Sans";
   font-style: normal;
   font-weight: bold;
@@ -35,6 +82,10 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 
   // color: $white;
 }
@@ -56,6 +107,8 @@
 }
 
 .advantages__slogan {
+  margin-bottom: 39px;
+
   font-family: "PT Sans";
   font-style: normal;
   font-weight: normal;
@@ -72,12 +125,41 @@
   // color: $white;
 }
 
-.advantages__photo {}
+.advantages__photo {
+  height: 260px;
+
+  @media (min-width: $tablet-width) {
+    height: 256px;
+    width: 66.666%;
+  }
+}
+
+.advantages__photo--city {
+
+  background-image: url("../img/photo-city.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.advantages__photo--bridge {
+
+  background-image: url("../img/photo-bridge.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
 
 .advantages__feature-list {
   list-style: none;
   padding-left: 0;
   background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    height: 330px;
+    display: flex;
+  }
 }
 
 .advantages__feature-item {
@@ -86,6 +168,9 @@
 }
 
 .advantages__feature-item-header {
+  margin-top: 0;
+  padding-top: 35px;
+
   font-family: "PT Sans";
   font-style: normal;
   font-weight: bold;
@@ -97,6 +182,10 @@
   text-transform: uppercase;
 
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .advantages__feature-item-description {

@@ -1,0 +1,30 @@
+.welcome-header {
+
+  &__wrapper {
+    height: 100%;
+    width: 88%;
+    margin: 0 auto;
+    background-image: url("../img/text-index.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-width: $tablet-width) {
+      width: 60%;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 38%;
+    }
+  }
+
+  &__welcome-text {
+
+  }
+
+  &__to-the-gorgeous-text {}
+
+  &__sedona-text {}
+
+  &__cite-text {}
+}

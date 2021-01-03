@@ -1,5 +1,12 @@
 .intro {
+}
+
+.intro__wrapper {
   border-bottom: 1px solid $border-grey;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
 }
 
 .intro__welcome-background {}
@@ -21,6 +28,7 @@
 }
 
 .intro__slogan {
+
   font-family: "PT Sans";
   font-style: normal;
   font-weight: bold;
@@ -29,10 +37,15 @@
 
   display: flex;
   align-items: center;
+  justify-content: center;
   text-align: center;
   text-transform: uppercase;
 
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .intro__description {
@@ -44,6 +57,7 @@
 
   display: flex;
   align-items: center;
+  justify-content: center;
   text-align: center;
   text-transform: uppercase;
 
