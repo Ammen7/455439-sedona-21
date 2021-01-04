@@ -3,28 +3,29 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="page__body">
+<body class="page-body">
 
   <header class="page-header">
 
-    <nav class="main-nav">
+    <nav class="main-nav ">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list nav-list">
-          <li class="nav-list__item nav-list__item--active">
+        <ul class="main-nav__list nav-list nav-list--closed">
+          <li class="nav-list__item nav-list__item--main nav-list__item--active">
             <a class="nav-list__link">Главная</a>
           </li>
-          <li class="nav-list__item">
+          <li class="nav-list__item nav-list__item--catalog">
             <a class="nav-list__link" href="catalog.html">Фото и видео</a>
           </li>
-          <li class="nav-list__item">
+          <li class="nav-list__item nav-list__item--form">
             <a class="nav-list__link" href="form.html">Форма отзыва</a>
           </li>
-          <li class="nav-list__item">
+          <li class="nav-list__item nav-list__item--htmla">
             <a class="nav-list__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
           </li>
         </ul>
@@ -32,20 +33,25 @@
     </nav>
 
     <a class="page-header__logo">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/102x84" alt="Седона" width="102"
-        height="84">
     </a>
-
+    <div class="page-header__welcome welcome-header">
+      <div class="welcome-header__wrapper">
+        <div class="welcome-header__welcome-text"></div>
+        <div class="welcome-header__to-the-gorgeous-text"></div>
+        <div class="welcome-header__sedona-text"></div>
+        <div class="welcome-header__cite-text"></div>
+      </div>
+    </div>
   </header>
 
   <main class="page-main">
     <h1 class="visually-hidden">Седона</h1>
 
-    <section class="intro">
-        <h2 class="visually-hidden">Вступление</h2>
-        <div class="intro__welcome-background"> </div>
-        <p class="intro__slogan">Седона - небольшой <br> городок в Аризоне, заслуживающий большего!</p>
-        <p class="intro__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+    <section class="intro intro__wrapper">
+      <h2 class="visually-hidden">Вступление</h2>
+      <div class="intro__welcome-background"> </div>
+      <p class="intro__slogan">Седона - небольшой <br> городок в Аризоне, заслуживающий большего!</p>
+      <p class="intro__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
     </section>
 
     <section class="advantages">
@@ -54,10 +60,14 @@
         <ol class="advantages__list">
 
           <li class="advantages__item advantages__item--big">
-            <h3 class="advantages__header">Настоящий городок</h3>
-            <p class="advantages__number">- №1 -</p>
-            <p class="advantages__slogan">Седона не аттракцион для туристов, там течет своя жизнь</p>
-            <div class="advantages__photo"></div>
+            <div class="advantages__main">
+              <h3 class="advantages__header">Настоящий городок</h3>
+              <p class="advantages__number">- №1 -</p>
+              <p class="advantages__slogan">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
+
+            <div class="advantages__photo advantages__photo--city"></div>
+
             <ul class="advantages__feature-list">
               <li class="advantages__feature-item">
                 <h4 class="advantages__feature-item-header">Жилье</h4>
@@ -79,25 +89,28 @@
           </li>
 
           <li class="advantages__item advantages__item--big">
-            <h3 class="advantages__header">Там есть мост дьявола</h3>
-            <p class="advantages__number">- №2 -</p>
-            <p class="advantages__slogan">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-            <div class="advantages__photo"></div>
+            <div class="advantages__main advantages__main--reverse-order">
+              <h3 class="advantages__header">Там есть мост дьявола</h3>
+              <p class="advantages__number">- №2 -</p>
+              <p class="advantages__slogan">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
+
+            <div class="advantages__photo advantages__photo--bridge"></div>
           </li>
 
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--small">
             <h3 class="advantages__header">Небольшая площадь</h3>
             <p class="advantages__number">- №3 -</p>
             <p class="advantages__slogan">Все интересные места находятся очень близко</p>
           </li>
 
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--small">
             <h3 class="advantages__header">Красивая дорога</h3>
             <p class="advantages__number">- №4 -</p>
             <p class="advantages__slogan">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
 
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--small">
             <h3 class="advantages__header">Мало туристов</h3>
             <p class="advantages__number">- №5 -</p>
             <p class="advantages__slogan">Большинство едет в Гранд Каньон и толпится там</p>
@@ -120,7 +133,7 @@
     <section class="map">
       <div class="map__wrapper">
         <h2 class="visually-hidden">Карта</h2>
-        <img class="map__sedona" src="https://via.placeholder.com/320x350" alt="Карта" width="320" height="350">
+        <div class="map__sedona"></div>
       </div>
     </section>
 
