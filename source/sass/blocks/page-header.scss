@@ -40,3 +40,18 @@
 
   }
 }
+
+.page-header__background {
+  height: 158px;
+  background-image: url("../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/back-desktop.jpg");
+    background-position: center;
+    background-size:auto;
+    height: 291px;
+  }
+}

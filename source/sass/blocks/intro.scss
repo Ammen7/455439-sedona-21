@@ -25,6 +25,10 @@
   text-transform: uppercase;
 
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .intro__slogan {
@@ -62,4 +66,8 @@
   text-transform: uppercase;
 
   color: $dark-grey;
+
+  @media (min-width: $tablet-width) {
+    line-height: 24px;
+  }
 }
