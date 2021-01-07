@@ -1,0 +1,19 @@
+.background-header {
+  &__sedona {
+    height: 100%;
+    width: 71.5%;
+    margin: 0 auto;
+    background-image: url("../img/sedona.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-width: $tablet-width) {
+      width: 59.5%;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 38%;
+    }
+  }
+}

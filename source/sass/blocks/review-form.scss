@@ -1,13 +1,88 @@
 .review-form {
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
+.review-form__form {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .review-form__fieldset {
+  box-sizing: border-box;
   border: none;
   border-bottom: 1px solid $border-grey;
   padding: 0;
   margin: 0;
+
+  // outline: 2px solid red;
+
+  &--introduce {
+    @media (min-width: $tablet-width) {
+      order: 2;
+      width: 50%;
+      padding-left: 58px;
+    }
+  }
+
+  &--contact-info {
+    @media (min-width: $tablet-width) {
+      order: 3;
+      width: 100%;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &--impression {
+    @media (min-width: $tablet-width) {
+      order: 1;
+      width: 50%;
+      padding-right: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+  }
+
+  &--visit {
+    @media (min-width: $tablet-width) {
+      order: 4;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-content: space-around;
+      padding-left: 95px;
+      padding-right: 95px;
+
+    }
+  }
+
+  &--emotion {
+    @media (min-width: $tablet-width) {
+      order: 5;
+      width: 100%;
+    }
+  }
 }
 
 .review-form__fieldset:last-of-type {
@@ -25,8 +100,12 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-
+  padding: 0;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .review-form__label {
@@ -42,17 +121,34 @@
   text-transform: uppercase;
 
   color: $black;
+
+
 }
 
 .review-form__label--emphasis {
   font-weight: bold;
+  text-transform: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 
 .review-form__label--contacts {
   flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    width: 45%;
+  }
 }
 
 .review-form__input-text {
+  box-sizing: border-box;
+
   font-family: "PT Sans";
   font-style: normal;
   font-weight: bold;
@@ -61,7 +157,6 @@
 
   width: 100%;
 
-  margin-left: 15px;
   margin-bottom: 20px;
   padding: 18px 0 14px 22px;
 
@@ -71,6 +166,11 @@
   color: $black;
   background: $input-grey;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+
+  }
 }
 
 .review-form__radio {}
@@ -80,7 +180,7 @@
 .review-form__textarea {
   box-sizing: border-box;
   resize: none;
-  width: 280px;
+  width: calc(100vw - 40px);
   height: 160px;
   padding: 13px 23px 29px 21px;
   margin-bottom: 51px;
@@ -94,9 +194,18 @@
   color: $black;
   background: $input-grey;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    width: calc(100vw - 120px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(100vw - 240px);
+  }
 }
 
 .review-form__button-submit {
+  order: 10;
   width: 280px;
   height: 58px;
   padding: 0;
@@ -119,4 +228,30 @@
 
   color: $white;
   background-color: $main-accent-blue;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.review-form__required-fields {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    order: 11;
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+
+    display: flex;
+    align-items: center;
+    text-align: right;
+    text-transform: uppercase;
+
+    margin-left: auto;
+
+    color: $dark-grey;
+  }
 }
