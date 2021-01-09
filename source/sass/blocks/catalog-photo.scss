@@ -2,12 +2,59 @@
 
 .catalog-photo__list {
   padding: 0;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    // grid-auto-flow: column;
+    // grid-template-rows: 480px 347px 347px;
+    // grid-template-columns: repeat(2, 324px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }
 
 .catalog-photo__item {
   list-style: none;
   border-bottom: 1px solid $border-grey;
 
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    border: none;
+
+    &:first-child {
+      width: 648px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+
+    &:first-child {
+      width: 1200px;
+    }
+  }
+
+
+}
+
+.catalog-photo__item-info {
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    background-color: $input-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $info-black-opacity;
+    color: $white;
+    margin-top: -72px;
+  }
 }
 
 .catalog-photo__item-header {
@@ -16,12 +63,13 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
+  margin: 0;
 
   display: flex;
   align-items: center;
   text-transform: uppercase;
 
-  color: $black;
+  color: inherit;
 }
 
 .catalog-photo__item-author {
@@ -30,23 +78,85 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
+  margin: 0;
 
   display: flex;
   align-items: center;
 
   color: $dark-grey;
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+    opacity: 1;
+  }
 }
 
-.catalog-photo__item_likes {
+.catalog-photo__item-likes {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
+  margin: 0;
 
   display: flex;
   align-items: center;
   text-transform: uppercase;
 
-  color: $black;
+  color: inherit;
+}
+
+.catalog-photo__picture {
+
+  &--vast {
+    height: 280px;
+    width: 100%;
+    background-image: url("/img/photo-1-mobile.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-width: $tablet-width) {
+      height: 400px;
+    }
+  }
+
+  &--vegetation {
+    height: 280px;
+    width: 100%;
+    background-image: url("/img/photo-2-mobile.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-width: $tablet-width) {
+      height: 267px;
+    }
+  }
+
+  &--road {
+    height: 280px;
+    width: 100%;
+    background-image: url("/img/photo-3-mobile.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-width: $tablet-width) {
+      height: 267px;
+    }
+  }
+
+  &--bridge {
+    height: 280px;
+    width: 100%;
+    background-image: url("/img/photo-4-mobile.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-width: $tablet-width) {
+      height: 267px;
+    }
+  }
 }
