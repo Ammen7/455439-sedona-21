@@ -40,7 +40,6 @@
     }
   }
 
-
 }
 
 .catalog-photo__item-info {
@@ -111,7 +110,7 @@
   &--vast {
     height: 280px;
     width: 100%;
-    background-image: url("/img/photo-1-mobile.jpg");
+    background-image: url("../img/photo-1-mobile.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -124,7 +123,7 @@
   &--vegetation {
     height: 280px;
     width: 100%;
-    background-image: url("/img/photo-2-mobile.jpg");
+    background-image: url("../img/photo-2-mobile.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -137,7 +136,7 @@
   &--road {
     height: 280px;
     width: 100%;
-    background-image: url("/img/photo-3-mobile.jpg");
+    background-image: url("../img/photo-3-mobile.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -150,7 +149,7 @@
   &--bridge {
     height: 280px;
     width: 100%;
-    background-image: url("/img/photo-4-mobile.jpg");
+    background-image: url("../img/photo-4-mobile.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

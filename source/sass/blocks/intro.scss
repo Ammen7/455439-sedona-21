@@ -1,12 +1,11 @@
-.intro {
-}
+.intro {}
 
 .intro__wrapper {
-  border-bottom: 1px solid $border-grey;
+  padding-top: 32px;
+  padding-bottom: 11px;
+  padding-left: 17px;
+  padding-right: 17px;
 
-  @media (min-width: $tablet-width) {
-    border-bottom: none;
-  }
 }
 
 .intro__welcome-background {}
@@ -39,6 +38,9 @@
   font-size: 18px;
   line-height: 26px;
 
+  margin: 0;
+  margin-bottom: 30px;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -53,6 +55,8 @@
 }
 
 .intro__description {
+  margin: 0;
+
   font-family: "PT Sans";
   font-style: normal;
   font-weight: normal;

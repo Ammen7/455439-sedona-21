@@ -53,7 +53,9 @@
 .page-footer__socials-item {}
 
 .page-footer__socials-item-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 46px;
   height: 48px;
   background-color: $main-accent-blue;
@@ -85,7 +87,7 @@
 }
 
 .page-footer__copyright a {
+  align-self:center;
   width: 27px;
   height: 34px;
-  background-color: $dark-grey;
 }
